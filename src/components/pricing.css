@@ -1,0 +1,110 @@
+.pricing {
+    background: #0d0d0d;
+    color: white;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+    color: #aaa;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.price-card {
+    width: 300px;
+    min-height: 420px;
+    background: #171717;
+    border: 1px solid #2b2b2b;
+    padding: 40px 30px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: red;
+}
+
+.price-card h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.price-card h4 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.price-card h4 span {
+    font-size: 14px;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.price-card li {
+    color: #ccc;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.price-card button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.price-card button:hover {
+    background: white;
+    color: black;
+}
+
+/* Popular plan */
+
+.popular {
+    border: 2px solid red;
+    transform: scale(1.05);
+}
+
+.popular:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    padding: 7px 18px;
+    font-size: 12px;
+    font-weight: bold;
+}

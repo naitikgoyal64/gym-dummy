@@ -1,0 +1,329 @@
+.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 7%;
+
+    background: #0b0b0b;
+    color: white;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.about-heading {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+}
+
+.about-heading span {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #ff3b3b;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.about-heading h2 {
+    margin: 0;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1;
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.about-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-image {
+    width: 100%;
+    height: 560px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.about-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.35),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: brightness(0.78);
+
+    transition: transform 0.5s ease;
+
+    border-radius: 15px;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.about-info {
+    max-width: 520px;
+}
+
+.about-info h3 {
+    margin: 0 0 22px;
+
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.about-info p {
+    margin: 0 0 18px;
+
+    color: #a8a8a8;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin: 35px 0;
+}
+
+.stat {
+    padding: 20px 15px;
+
+    background: #151515;
+
+    border-left: 2px solid #ff3b3b;
+}
+
+.stat h4 {
+    margin: 0 0 7px;
+
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.stat span {
+    color: #888;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.about-btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #ff3b3b;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+    background: #e52f2f;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .about {
+        padding: 80px 6%;
+    }
+
+    .about-heading {
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-image {
+        height: 500px;
+        max-width: 700px;
+    }
+
+    .about-info {
+        max-width: 700px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .about {
+        padding: 70px 20px;
+    }
+
+    .about-heading {
+        margin-bottom: 40px;
+    }
+
+    .about-heading span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .about-heading h2 {
+        font-size: 40px;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .about-image {
+        padding: 10px;
+        height: 400px;
+    }
+
+    .about-image img {
+        border-radius: 15px;
+    }
+
+    .about-info h3 {
+        font-size: 27px;
+    }
+
+    .about-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        margin: 30px 0;
+    }
+
+    .stat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 16px 18px;
+    }
+
+    .stat h4 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .stat span {
+        font-size: 12px;
+    }
+
+    .about-btn {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .about {
+        padding: 60px 16px;
+    }
+
+    .about-heading h2 {
+        font-size: 34px;
+    }
+
+    .about-image {
+        height: 340px;
+    }
+
+    .about-info h3 {
+        font-size: 24px;
+    }
+
+}
