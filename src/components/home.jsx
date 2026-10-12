@@ -4,10 +4,10 @@ import './home.css'
 const Home = () => {
 
     const images = [
-        '/gym.jpg',
-        '/wallpaper.jpg',
         '/wallpaper2.jpg',
-        '/wallpaper3.jpg'
+        '/wallpaper3.jpg',
+        '/gym.jpg',
+        '/wallpaper.jpg'
     ]
 
     const [currentImage, setCurrentImage] = useState(0)
@@ -15,7 +15,7 @@ const Home = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImage(prev => (prev + 1) % images.length)
-        }, 3000)
+        }, 2500)
 
         return () => clearInterval(interval)
     }, [])
